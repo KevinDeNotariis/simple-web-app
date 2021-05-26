@@ -4,7 +4,9 @@ import got from "got";
 
 const routes = (app) => {
   app.get("/", (req, res) => {
-    return res.render("index.html", { title: "My App Developped in DevOps" });
+    return res.render("index.html", {
+      title: "My Web App With a CI / CD Pipeline",
+    });
   });
 
   app.get("/api/users", (req, res) => {
